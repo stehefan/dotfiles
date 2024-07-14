@@ -7,6 +7,7 @@ brew "starship"
 brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
 brew "fzf"
+brew "difftastic"
 
 cask "orbstack"
 cask "raycast"
