@@ -5,6 +5,7 @@ brew "jq"
 brew "mas"
 brew "starship"
 brew "zsh-autosuggestions"
+brew "zsh-syntax-highlighting"
 brew "fzf"
 
 cask "orbstack"
