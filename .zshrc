@@ -55,7 +55,8 @@ alias .....="cd ../../../.."
 ## Git
 alias ga="git add"
 alias gst="git status"
-alias gpom="git push origin main" 
+alias gpom="git push origin main"
+alias gd="git diff"
 alias gdc="git diff --cached"
 
 # Source additional zshrc content
