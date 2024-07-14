@@ -8,3 +8,8 @@
 	cookiefile = /Users/stefanlier/.gitcookies
 [init]
 	defaultBranch = main
+[github]
+  user = stepf
+[push]
+  default = simple
+  autoSetupRemote = true
