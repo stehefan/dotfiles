@@ -5,6 +5,7 @@ brew "jq"
 brew "mas"
 brew "starship"
 brew "zsh-autosuggestions"
+brew "fzf"
 
 cask "orbstack"
 cask "raycast"
@@ -22,3 +23,4 @@ mas "Pixelmator Pro", id: 1289583905
 mas "Prime Video", id: 545519333
 mas "TickTick", id: 966085870
 mas "Xcode", id: 497799835
+mas "Slack", id: 803453959
