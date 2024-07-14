@@ -9,6 +9,7 @@ brew "fzf"
 
 cask "orbstack"
 cask "raycast"
+cask "cursor"
 
 mas "Amphetamine", id: 937984704
 mas "AusweisApp", id: 948660805
