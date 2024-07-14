@@ -48,6 +48,23 @@ style = "bright-black"
 format = "[$duration]($style) "
 style = "yellow"
 
+[hostname]
+disabled = true
+
+[java]
+disabled = true
+
+[nodejs]
+disabled = true
+
+[package]
+disabled = true
+
 [python]
-format = "[$virtualenv]($style) "
-style = "bright-black"
+disabled = true
+
+[terraform]
+disabled = true
+
+[username]
+disabled = true
