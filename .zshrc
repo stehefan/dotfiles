@@ -12,6 +12,9 @@ _source_if_exists "$(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestion
 _source_if_exists "$(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 source <(fzf --zsh)
 
+# General configuration
+bindkey -e                                                        # enable emacs keybindings
+
 # History
 bindkey '^R' history-incremental-search-backward                  # ctrl-r to search history
 HISTFILE=$HOME/.zsh_history                                       # path to history file; needed for shared history
