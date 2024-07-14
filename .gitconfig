@@ -1,0 +1,10 @@
+[user]
+	email = lier.stefan@gmail.com
+	name = Stefan Lier
+[core]
+	excludesfile = /Users/stefanlier/.gitignore.global
+	autocrlf = input
+[http]
+	cookiefile = /Users/stefanlier/.gitcookies
+[init]
+	defaultBranch = main
