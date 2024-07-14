@@ -16,7 +16,6 @@ source <(fzf --zsh)
 bindkey -e                                                        # enable emacs keybindings
 
 # History
-bindkey '^R' history-incremental-search-backward                  # ctrl-r to search history
 HISTFILE=$HOME/.zsh_history                                       # path to history file; needed for shared history
 HISTSIZE=10000                                                    # read up to $HISTSIZE lines
 SAVEHIST=10000                                                    # write up to $SAVEHIST lines
@@ -32,14 +31,6 @@ setopt complete_in_word                                           # completion
 zstyle ':completion:*' matcher-list '' \
   'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' '+l:|=* r:|=*'    # partial completion
 zstyle ':completion:*' menu select                                # highlight entries on tab
-
-# Incremental Search with Arrow Keys
-autoload -U up-line-or-beginning-search
-autoload -U down-line-or-beginning-search
-zle -N up-line-or-beginning-search
-zle -N down-line-or-beginning-search
-bindkey "^[[A" up-line-or-beginning-search # Up
-bindkey "^[[B" down-line-or-beginning-search # Down
 
 # Aliases
 ## General
