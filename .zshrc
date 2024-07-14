@@ -8,7 +8,6 @@ function _source_if_exists {
 _source_if_exists "$HOME/.sdkman/bin/sdkman-init.sh"
 _source_if_exists "$NVM_DIR/nvm.sh"
 _source_if_exists "$NVM_DIR/bash_completion"
-_source_if_exists "$HOME/.orbstack/shell/init.zsh"
 _source_if_exists "$(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
 _source_if_exists "$(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 source <(fzf --zsh)
