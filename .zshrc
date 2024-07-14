@@ -58,7 +58,5 @@ alias gst="git status"
 alias gpom="git push origin main" 
 alias gdc="git diff --cached"
 
-# Source additional zshrrc content
-if [ -f ~/.zshrc.local ]; then
-  source ~/.zshrc.local
-fi
+# Source additional zshrc content
+_source_if_exists "$HOME/.zshrc.local"
