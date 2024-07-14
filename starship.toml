@@ -22,8 +22,7 @@ truncation_length = 10
 
 [character]
 success_symbol = "[❯](bold green)"
-error_symbol = "[❯](boldred)"
-vimcmd_symbol = "[❮](bold white)"
+error_symbol = "[❯](bold red)"
 
 [git_branch]
 format = "[$branch]($style)"
