@@ -1,17 +1,18 @@
 tap "homebrew/bundle"
-
+brew "awscli"
+brew "difftastic"
 brew "direnv"
+brew "fzf"
 brew "jq"
 brew "mas"
 brew "starship"
+brew "zoxide"
+brew "zsh"
 brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
-brew "fzf"
-brew "difftastic"
-
+cask "jetbrains-toolbox"
 cask "orbstack"
 cask "raycast"
-cask "cursor"
 
 mas "Amphetamine", id: 937984704
 mas "AusweisApp", id: 948660805
