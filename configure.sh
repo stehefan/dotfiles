@@ -2,10 +2,17 @@
 set -e
 
 function link_file {
-    echo "Linking $1"
+    local source=$1
+    local destinationFolder=$2
 
-    [ -f $1 ] && cp $1 $1.bak
-    ln -fs $(pwd)/$1 $1
+    if [[ $destinationFolder == "" ]]; then
+      destinationFolder="$HOME"
+    fi
+
+    echo "Linking $source to $destinationFolder/$source"
+
+    [ -f $destinationFolder ] && cp $destinationFolder $destinationFolder.bak
+    ln -fs $(pwd)/$source $destinationFolder
 }
 
 # Initialise config-dir if not already present
@@ -17,9 +24,9 @@ sudo /bin/zsh -c 'echo "$(brew --prefix zsh)/bin/zsh" >> /etc/shells'
 chsh -s $(brew --prefix zsh)/bin/zsh $(whoami)
 
 # Linking config files
-link_file ~/.gitconfig
-link_file ~/.gitignore.global
-link_file ~/.config/starship.toml
-link_file ~/.zshrc
-link_file ~/.zprofile
-link_file ~/.vimrc
+link_file .gitconfig
+link_file .gitignore.global
+link_file starship.toml ~/.config
+link_file .zshrc
+link_file .zprofile
+link_file .vimrc
