@@ -18,6 +18,7 @@ cask "jetbrains-toolbox"
 cask "notion"
 cask "orbstack"
 cask "raycast"
+cask "sonos"
 
 mas "Amphetamine", id: 937984704
 mas "AusweisApp", id: 948660805
