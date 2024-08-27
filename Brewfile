@@ -16,6 +16,7 @@ cask "git-credential-manager"
 cask "jetbrains-toolbox"
 cask "orbstack"
 cask "raycast"
+cask "notion"
 
 mas "Amphetamine", id: 937984704
 mas "AusweisApp", id: 948660805
