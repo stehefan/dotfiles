@@ -13,10 +13,11 @@ brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
 
 cask "git-credential-manager"
+cask "hyper"
 cask "jetbrains-toolbox"
+cask "notion"
 cask "orbstack"
 cask "raycast"
-cask "notion"
 
 mas "Amphetamine", id: 937984704
 mas "AusweisApp", id: 948660805
