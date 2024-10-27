@@ -11,6 +11,7 @@ _source_if_exists "$NVM_DIR/bash_completion"
 _source_if_exists "$(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
 _source_if_exists "$(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 _source_if_exists "$HOME/.orbstack/shell/init.zsh"
+_source_if_exists "$HOME/.cargo/env"
 source <(fzf --zsh)
 
 # General configuration
