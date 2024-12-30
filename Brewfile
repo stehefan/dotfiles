@@ -7,15 +7,18 @@ brew "fzf"
 brew "git"
 brew "jq"
 brew "mas"
+brew "pre-commit"
 brew "starship"
 brew "zoxide"
 brew "zsh"
 brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
 
+cask "cursor"
+cask "ghostty"
 cask "git-credential-manager"
 cask "google-drive"
-cask "hyper"
+cask "inkscape"
 cask "jetbrains-toolbox"
 cask "mullvadvpn"
 cask "notion"
@@ -34,6 +37,7 @@ mas "iA Writer", id: 775737590
 mas "iStat Menus", id: 1319778037
 mas "Pixelmator Pro", id: 1289583905
 mas "Prime Video", id: 545519333
+mas "Reeder", id: 6475002485
+mas "Slack", id: 803453959
 mas "TickTick", id: 966085870
 mas "Xcode", id: 497799835
-mas "Slack", id: 803453959
