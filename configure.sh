@@ -3,16 +3,22 @@ set -e
 
 function link_file {
     local source=$1
-    local destinationFolder=$2
+    local destination=$2
 
-    if [[ $destinationFolder == "" ]]; then
-      destinationFolder="$HOME"
+    if [[ $destination == "" ]]; then
+      destination="$HOME/$source"
     fi
+    local destdir=$(dirname "$destination")
 
-    echo "Linking $source to $destinationFolder/$source"
-
-    [ -f $destinationFolder ] && cp $destinationFolder $destinationFolder.bak
-    ln -fs $(pwd)/$source $destinationFolder
+    [ ! -d "$destdir" ] && echo "Creating directory $destdir" && mkdir -p "$destdir"
+    [ -f "$destination" ] && [ ! -L "$destination" ] && echo "Backing up $destination to $destination.bak" && cp "$destination" "$destination.bak"
+    
+    if [ ! -L "$destination" ]; then
+      echo "Linking $source to $destination"
+      ln -fs $(pwd)/$source $destination
+    else
+      echo " $destination is already linked"
+    fi
 }
 
 # Initialise config-dir if not already present
