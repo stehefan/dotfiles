@@ -25,9 +25,12 @@ function link_file {
 mkdir -p ~/.config 
 
 # Setting default shell
+brewZsh=$(brew --prefix zsh)/bin/zsh
+if [[ "$SHELL" != *"$brewZsh"* ]]; then
 echo "Set the default shell to zsh managed with brew"
-sudo /bin/zsh -c 'echo "$(brew --prefix zsh)/bin/zsh" >> /etc/shells'
+  sudo /bin/zsh -c "echo '$brewZsh' >> /etc/shells"
 chsh -s $(brew --prefix zsh)/bin/zsh $(whoami)
+fi
 
 # Linking config files
 link_file .gitconfig
