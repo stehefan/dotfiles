@@ -1,6 +1,7 @@
 [user]
 	email = lier.stefan@gmail.com
 	name = Stefan Lier
+	signingkey = CAF8490710256716
 [core]
 	excludesfile = /Users/stefan/.gitignore.global
 	autocrlf = input
@@ -23,3 +24,5 @@
   difftool = true
 [credential]
 	helper = /usr/local/share/gcm-core/git-credential-manager
+[commit]
+	gpgsign = true
