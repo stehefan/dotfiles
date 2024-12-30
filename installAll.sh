@@ -23,3 +23,10 @@ if [[ "$user_input" == "y" || "$user_input" == "Y" ]]; then
     curl -o- curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh  | zsh
     echo "NVM installed."
 fi
+
+read -p "Do you want to proceed with the installation of PNPM? (Y/n): " user_input
+if [[ "$user_input" == "y" || "$user_input" == "Y" ]]; then
+    echo "Installing PNPM..."
+    curl -fsSL https://get.pnpm.io/install.sh | sh -
+    echo "PNPM installed."
+fi
