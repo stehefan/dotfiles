@@ -1,12 +1,13 @@
 # dotfiles
+
 Repository containing all basic configuration for my Mac
 
 ## Installation
 
-First, run the installation of the dotfiles:
+First, run the installation of the dotfiles and other relevant software:
 
 ```shell
-zsh install.sh
+zsh installAll.sh
 ```
 
 After that, run the configuration of the dotfiles:
