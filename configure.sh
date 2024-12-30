@@ -35,7 +35,7 @@ fi
 # Linking config files
 link_file .gitconfig
 link_file .gitignore.global
-link_file starship.toml ~/.config
+link_file starship.toml ~/.config/starship.toml
 link_file .zshrc
 link_file .zprofile
 link_file .vimrc
