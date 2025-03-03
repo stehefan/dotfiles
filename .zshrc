@@ -51,9 +51,10 @@ alias .....="cd ../../../.."
 ## Git
 alias ga="git add"
 alias gst="git status"
-alias gpom="git push origin main"
 alias gd="git diff"
 alias gdc="git diff --cached"
+alias pullo='git pull -r origin `git rev-parse --abbrev-ref HEAD`'
+alias pusho='git push origin `git rev-parse --abbrev-ref HEAD`'
 
 # Source additional zshrc content
 _source_if_exists "$HOME/.zshrc.local"
