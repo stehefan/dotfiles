@@ -40,3 +40,4 @@ link_file .zshrc
 link_file .zprofile
 link_file .vimrc
 link_file ghostty.config ~/.config/ghostty/config
+link_file .gitaliases
