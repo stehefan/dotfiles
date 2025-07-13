@@ -1,7 +1,7 @@
 [user]
-	email = lier.stefan@gmail.com
-	name = Stefan Lier
-	signingkey = CAF8490710256716
+	email = stefan@plancraft.com
+	name = Stefan
+	signingkey = FC59B113212503DC
 [core]
 	excludesfile = /Users/stefan/.gitignore.global
 	autocrlf = input
@@ -12,8 +12,8 @@
 [github]
   user = stepf
 [push]
-  default = simple
-  autoSetupRemote = true
+	default = current
+	autoSetupRemote = true
 [diff]
   external = difft
 [difftool]
@@ -22,7 +22,12 @@
   cmd = difft "$LOCAL" "$REMOTE"
 [pager]
   difftool = true
-[credential]
-	helper = /usr/local/share/gcm-core/git-credential-manager
 [commit]
 	gpgsign = true
+[credential]
+	helper = 
+	helper = /usr/local/share/gcm-core/git-credential-manager
+[credential "https://dev.azure.com"]
+	useHttpPath = true
+[branch]
+	autoSetupMerge = always
