@@ -11,6 +11,7 @@ $git_branch\
 $git_state\
 $git_status\
 $cmd_duration\
+$custom\
 $line_break\
 $python\
 $character"""
@@ -67,3 +68,16 @@ disabled = true
 
 [username]
 disabled = true
+
+[custom.prod_indicator]
+when = '''
+dir="$PWD"
+while [[ "$dir" != "/" ]]; do
+  if [[ -f "$dir/.currentenv" && $(cat "$dir/.currentenv") =~ "prod" ]]; then
+    exit 0
+  fi
+  dir=$(dirname "$dir")
+done
+exit 1
+'''
+format = "          [         You are on production         ](bg:red fg:black) "
